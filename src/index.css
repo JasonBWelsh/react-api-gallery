@@ -1,5 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+/* Main App Component */
+.App {
+  background: tomato;
 }
