@@ -5,7 +5,7 @@ const ImageList = props => {
 
   const results = props.data;
   let images = results.map(image =>
-    <Image url={`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}.jpg`}
+    <Image url={`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}_q.jpg`}
     key={image.id} />
   );
 
