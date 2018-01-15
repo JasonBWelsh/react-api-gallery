@@ -10,7 +10,7 @@ class Container extends React.Component {
     this.state = {
       photos: [],
       loading: true,
-      query: ""
+      query: ''
     }
   }
 
@@ -31,7 +31,7 @@ class Container extends React.Component {
 // user method that makes data request from Flickr api
 //parses data to json
 // updates state with returned data
-  performSearch = (query = 'kettlebell') => {
+  performSearch = () => {
     axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${this.props.query}&safe_search=1&per_page=12&format=json&nojsoncallback=1`)
       .then(response => {
         this.setState({

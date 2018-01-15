@@ -5,11 +5,11 @@ import Navigation from './Navigation';
 class SearchForm extends Component  {
 
   state = {
-    searchText: ''
+    query: ''
   }
 
   onSearchChange = e => {
-    this.setState({ searchText: e.target.value });
+    this.setState({ query: e.target.value });
   }
 
   handleSubmit = e => {
@@ -30,8 +30,9 @@ class SearchForm extends Component  {
                   placeholder="Search..." />
           <button type="submit" id="submit" className="search-button">svg icon here...</button>
         </form>
-        <h2>{this.state.searchText}</h2>
-        <Container query={this.state.searchText} />
+        <Navigation />
+        <h2>{this.state.query}</h2>
+        <Container query={this.state.query} />
       </div>
     );
   }
