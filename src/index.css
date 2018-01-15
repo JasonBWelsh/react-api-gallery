@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Base Styles */
 html, body, #root {
   height: 100%;
   width: 100%;
@@ -15,13 +16,58 @@ body {
   font-family: sans-serif;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 /* Main App Component */
 .App {
   height: 100%;
   width: 100%;
-  background: tomato;
 }
 
 .App h1 {
   margin: 0;
 }
+
+/* Container Component */
+
+.Container {
+
+}
+
+.image-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: .3em;
+}
+
+.image-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*li wraps images */
+
+/* tablet MQ */
+@media (min-width: 768px) {
+  .image-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop MQ */
+@media (min-width: 1024px) {
+  .image-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+
+
+
+
+/* */

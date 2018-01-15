@@ -3,7 +3,7 @@ import React from 'react';
 const Image = props => {
   return(
     <li className="image-wrap">
-      <img scr={props.url} alt="" />
+      <img src={props.url} alt={props.alt} />
     </li>
   );
 }
