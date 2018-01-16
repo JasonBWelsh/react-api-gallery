@@ -31,7 +31,7 @@ ul {
   margin: 0;
 }
 
-/* Container Component */
+/*** Container Component ***/
 
 .Container {
 
@@ -49,6 +49,12 @@ ul {
   justify-content: center;
   align-items: center;
 }/*li wraps images */
+
+
+/*** Search Form Component ***/
+.search-form {
+  border: 1px solid tomato;
+}
 
 /* tablet MQ */
 @media (min-width: 768px) {

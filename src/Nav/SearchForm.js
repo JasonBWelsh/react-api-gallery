@@ -22,7 +22,7 @@ class SearchForm extends Component  {
     return(
       <div>
         <form className="search-form" onSubmit={this.handleSubmit} >
-          <label className="is-hidden" htmlFor="search">Search</label>
+          <label htmlFor="search">Search</label>
           <input type="search"
                   onChange={this.onSearchChange}
                   name="search"

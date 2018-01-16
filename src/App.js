@@ -5,7 +5,6 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import Container from './Container';
 
 // Import components for route matches
 import Rottweiler from './Nav/Rottweiler';

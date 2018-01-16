@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import apiKey from './config.js';
 import axios from 'axios';
 import ImageList from './Images/ImageList';
