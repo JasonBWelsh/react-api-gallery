@@ -63,8 +63,13 @@ ul {
   display: none;
 }
 
+.search-input {
+  height: 32px; /* to match .search-button */
+}
+
 .search-button {
   background: #336cc6;
+  border: none;
 }
 
 /* tablet MQ */
