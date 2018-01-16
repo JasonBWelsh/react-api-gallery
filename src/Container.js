@@ -49,6 +49,7 @@ class Container extends React.Component {
 // displays laoding message
 // else renders ImageList component passing data and query props
   render() {
+    console.log(this.state.photos);
     return (
         <div className="Container">
           {

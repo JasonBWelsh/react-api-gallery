@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 class SearchForm extends Component  {
 
   state = {
-    query: ''
+    query: 'Fitness'
   }
 
   onSearchChange = e => {
@@ -13,7 +13,7 @@ class SearchForm extends Component  {
   }
 
   handleSubmit = e => {
-    e.preventDefault;
+    e.preventDefault();
     this.props.onSearch(this.query.value);
     e.currentTarget.reset();
   }
