@@ -21,6 +21,9 @@ ul {
   padding: 0;
 }
 
+/* color values */
+/* light blue #336cc6 */
+
 /* Main App Component */
 .App {
   height: 100%;
@@ -54,6 +57,14 @@ ul {
 /*** Search Form Component ***/
 .search-form {
   border: 1px solid tomato;
+}
+
+.form-label {
+  display: none;
+}
+
+.search-button {
+  background: #336cc6;
 }
 
 /* tablet MQ */
