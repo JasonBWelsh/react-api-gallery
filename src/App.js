@@ -19,9 +19,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <SearchForm />
           <Switch>
-            /*<Route exact path='/' render={ () => (<SearchForm />)} />*/
+            <Route exact path='/' render={ () => (<SearchForm />)} />
             <Route exact path="/rottweiler" render={ () => (<Rottweiler query={"rottweiler"}/>)} />
             <Route exact path="/amstaff" render={ () => (<Amstaff query={"amstaff"}/>)} />
             <Route exact path="/hiking" render={ () => (<Hiking query={"hiking"}/>)} />

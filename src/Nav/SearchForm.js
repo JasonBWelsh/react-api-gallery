@@ -72,7 +72,7 @@ class SearchForm extends Component  {
                   name="search"
                   ref={(input) => this.query = input}
                   placeholder="Search..." />
-          <button type="submit" id="submit" className="search-button"><MagGlass /></button>
+          {/*<button type="submit" id="submit" className="search-button"><MagGlass /></button>*/}
         </form>
         <Navigation />
         <h2>{this.state.query}</h2>

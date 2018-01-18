@@ -14,11 +14,19 @@ html, body, #root {
 
 body {
   font-family: sans-serif;
+  background: #1f2534;
+  color: #fff;
 }
 
 ul {
   list-style: none;
+  margin: 0;
   padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* color values */
@@ -56,7 +64,13 @@ ul {
 
 /*** Search Form Component ***/
 .search-form {
-  border: 1px solid tomato;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #323232;
+  padding: 1em .5em;
 }
 
 .form-label {
@@ -70,6 +84,31 @@ ul {
 .search-button {
   background: #336cc6;
   border: none;
+}
+
+/*** Main Nav ***/
+.main-nav {
+
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: #323232;
+  width: 100%;
+  padding: 1em;
+}
+
+.main-nav li {
+  background: #306efe;
+}
+
+.main-nav li a {
+  padding: .5em 1em;
 }
 
 /* tablet MQ */
