@@ -65,7 +65,7 @@ class SearchForm extends Component  {
     return(
       <div>
         <form className="search-form" onSubmit={this.handleSubmit} >
-          <label class="form-label" htmlFor="search">Search</label>
+          <label className="form-label" htmlFor="search">Search</label>
           <input type="search"
                   className="search-input"
                   onChange={this.onSearchChange}
