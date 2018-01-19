@@ -45,7 +45,7 @@ a {
 /*** Container Component ***/
 
 .Container {
-
+  padding-top: 8em;
 }
 
 .image-list {
@@ -69,7 +69,7 @@ a {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: #306efe;
+  /* background: #306efe; */
   padding: 1em .5em;
 }
 
@@ -78,7 +78,14 @@ a {
 }
 
 .search-input {
-  height: 32px; /* to match .search-button */
+  padding: 1em;
+  border: 15px solid #000;
+  width: 20em;
+  transition: all .4s ease;
+}
+
+.search-input:focus {
+  width: 23em;
 }
 
 .search-button {
@@ -113,7 +120,6 @@ a {
 .main-nav a {
   padding: .5em 1em;
   width: 100%;
-  /* background: #323232; */
   border-radius: 5em;
   border: 1px solid #fff;
   transition: all .4s ease;
@@ -121,6 +127,15 @@ a {
 
 .main-nav a:hover {
   background: #323232;
+}
+
+.search-term { /* h2 to hold dynamic search text */
+  position: fixed;
+  top: 5em;
+  text-align: center;
+  background: rgba(0, 0, 0, .8); /* #306efe; */
+  padding: .4em;
+  border-radius: 5em;
 }
 
 /* active class for nav router */
@@ -131,12 +146,19 @@ a {
 
 /* tablet MQ */
 @media (min-width: 768px) {
+  .Container {
+    padding-top: 5em;
+  }
+
   .image-list {
     grid-template-columns: 1fr 1fr;
   }
   .main-nav ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 0;
+  }
+  .search-term {
+    top: 3em;
   }
 }
 

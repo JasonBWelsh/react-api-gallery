@@ -75,7 +75,7 @@ class SearchForm extends Component  {
           {/*<button type="submit" id="submit" className="search-button"><MagGlass /></button>*/}
         </form>
         <Navigation />
-        <h2>{this.state.query}</h2>
+        <h2 className="search-term">{this.state.query}</h2>
         <Container query={this.state.query} />
       </div>
     );
