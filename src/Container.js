@@ -13,21 +13,17 @@ class Container extends React.Component {
       query: ''
     }
   }
-
 // lifecycle method called immediately after DOM loads and calls performSearch()
 // as callback method
   componentDidMount() {
     this.performSearch();
   }
-
-
   //updates query property of State object with props passed from SearchForm
   // passes query to performSearch method
   componentWillReceiveProps(nextProps) {
     this.setState({ query: nextProps.query });
     this.performSearch(nextProps.query);
   }
-
 // user method that makes data request from Flickr api
 //parses data to json
 // updates state with returned data
@@ -43,7 +39,6 @@ class Container extends React.Component {
         console.log('Error fetching and parsing data', error);
       });
   }
-
 // render container div (not Container component)
 // if loading property of state object is truthy
 // displays laoding message

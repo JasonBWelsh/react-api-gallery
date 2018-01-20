@@ -7,11 +7,9 @@ class SearchForm extends Component  {
   state = {
     query: 'Robots'
   }
-
   onSearchChange = e => {
     this.setState({ query: e.target.value });
   }
-
   handleSubmit = e => {
     e.preventDefault();
     this.setState({ query:this.state.query });
